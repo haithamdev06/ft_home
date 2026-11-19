@@ -6,7 +6,7 @@
 /*   By: hamonajj <hamonajj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 11:04:38 by hamonajj          #+#    #+#             */
-/*   Updated: 2026/11/19 12:42:30 by hamonajj         ###   ########.fr       */
+/*   Updated: 2026/11/19 13:03:36 by hamonajj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,3 +72,23 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	*str = "  \t \n Hello, 42 World! \n\t  ";
+// 	char	*set = " \n\t";
+// 	char	*trimmed;
+
+// 	trimmed = ft_strtrim(str, set);
+// 	if (!trimmed)
+// 	{
+// 		printf("Allocation failed!\n");
+// 		return (1);
+// 	}
+// 	printf("Original: %s\n", str);
+// 	printf("Trimmed:  %s\n", trimmed);
+// 	free(trimmed);
+// 	return (0);
+// }

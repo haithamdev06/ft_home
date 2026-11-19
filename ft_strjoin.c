@@ -6,11 +6,12 @@
 /*   By: hamonajj <hamonajj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 10:41:35 by hamonajj          #+#    #+#             */
-/*   Updated: 2026/11/19 11:03:33 by hamonajj         ###   ########.fr       */
+/*   Updated: 2026/11/19 14:31:25 by hamonajj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stddef.h>
 
 static size_t	ft_strlen(const	char *s)
 {
