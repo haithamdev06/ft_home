@@ -6,7 +6,7 @@
 /*   By: hamonajj <hamonajj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 15:36:22 by hamonajj          #+#    #+#             */
-/*   Updated: 2026/11/19 15:38:35 by hamonajj         ###   ########.fr       */
+/*   Updated: 2026/11/22 12:15:16 by hamonajj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	
+	new->next = *lst;
+	*lst = new;
 }
