@@ -31,8 +31,8 @@ void	ft_putnbr_fd(int nb, int fd)
 	}
 	if (nb > 9)
 	{
-		ft_putnbr_fd(nb / 10);
-		ft_putnbr_fd(nb % 10);
+		ft_putnbr_fd(nb / 10, fd);
+		ft_putnbr_fd(nb % 10, fd);
 	}
 	else
 		ft_putchar(nb + '0', fd);

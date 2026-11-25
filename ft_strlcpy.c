@@ -28,7 +28,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 			dest[j] = src[j];
 			j++;
 		}
+		dest[j] = '\0';
 	}
-	dest[j] = '\0';
 	return (i);
 }

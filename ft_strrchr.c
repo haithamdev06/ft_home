@@ -16,14 +16,17 @@ char	*ft_strrchr(const char *s, int c)
 	int	j;
 
 	i = 0;
-	if (c == 0)
-		return ((char *)s);
+	j = -1;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			j = i;
 		i++;
 	}
+	if ((char)c == '\0')
+		return ((char *)&s[i]);
+	if (j == -1)
+		return (0);
 	return ((char *)&s[j]);
 }
 // #include <stdio.h>

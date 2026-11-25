@@ -12,17 +12,20 @@
 
 #include <stddef.h>
 #include <stdlib.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	char	*p;
 
+	if (start >= ft_strlen(s))
+		len = 0;
 	p = malloc(sizeof(char) * (len + 1));
 	i = 0;
 	if (!p)
 		return (NULL);
-	while (i < len)
+	while (i < len && s[start])
 	{
 		p[i] = s[start];
 		start++;

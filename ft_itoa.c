@@ -19,6 +19,8 @@ static int	calc(int n)
 
 	i = 0;
 	nb = n;
+	if (nb == 0)
+		return (1);
 	if (nb < 0)
 	{
 		nb = -nb;
@@ -43,6 +45,8 @@ char	*ft_itoa(int n)
 	s = malloc(sizeof(char) * (i + 1));
 	if (!s)
 		return (NULL);
+	if (nb == 0)
+		s[0] = '0';
 	if (nb < 0)
 	{
 		s[0] = '-';
