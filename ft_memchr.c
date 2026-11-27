@@ -6,7 +6,7 @@
 /*   By: hamonajj <hamonajj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/15 12:48:25 by hamonajj          #+#    #+#             */
-/*   Updated: 2026/11/15 13:38:31 by hamonajj         ###   ########.fr       */
+/*   Updated: 2026/11/27 14:56:04 by hamonajj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 // int main()
 // {
-// 	char a[10] = "";
+// 	char a[100] = "hello world this is a test";
 // 	printf("%p", ft_memchr((void *)a, 101, 2));
 // 	printf("%p", memchr((void *)a, 101, 2));
 // }

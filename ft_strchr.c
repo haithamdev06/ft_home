@@ -6,9 +6,11 @@
 /*   By: hamonajj <hamonajj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 14:46:38 by hamonajj          #+#    #+#             */
-/*   Updated: 2026/11/19 12:41:10 by hamonajj         ###   ########.fr       */
+/*   Updated: 2026/11/27 13:57:55 by hamonajj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
 
 char	*ft_strchr(const char *s, int c)
 {

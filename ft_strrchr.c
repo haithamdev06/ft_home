@@ -6,7 +6,7 @@
 /*   By: hamonajj <hamonajj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 15:01:07 by hamonajj          #+#    #+#             */
-/*   Updated: 2026/11/12 15:13:48 by hamonajj         ###   ########.fr       */
+/*   Updated: 2026/11/27 14:49:20 by hamonajj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,5 @@ char	*ft_strrchr(const char *s, int c)
 // int main()
 // {
 // 	const char *a = "hello A test test";
-// 	printf("%s", ft_strrchr(a, 116));
+// 	printf("%s", ft_strrchr(a, 'A'));
 // }

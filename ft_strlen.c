@@ -6,7 +6,7 @@
 /*   By: hamonajj <hamonajj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 12:57:40 by hamonajj          #+#    #+#             */
-/*   Updated: 2026/11/11 17:14:46 by hamonajj         ###   ########.fr       */
+/*   Updated: 2026/11/27 14:21:00 by hamonajj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,10 @@ size_t	ft_strlen(const	char *s)
 		i++;
 	return (i);
 }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     printf("%ld", ft_strlen("nice to meet you"));
+// }
