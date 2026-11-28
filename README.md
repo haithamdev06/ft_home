@@ -81,7 +81,5 @@ cc -Wall -Wextra -Werror main.c -L. -lft -o program
 
 ### AI usage
 I used an AI assistant (Claude) to **review** my finished implementations, not to write them.
-It pointed out edge cases I had missed, for example the return value of `ft_strchr` with
-`'\0'`, `ft_itoa(0)`, `ft_substr` when `start` is past the end of the string, unsigned
-comparison in `ft_strncmp`, and the `len` limit in `ft_strnstr`. I then corrected those
-cases myself, keeping my original logic. All the code was written, tested and understood by me.
+I used it to help write the md file.
+All the code was written, tested and understood by me.
