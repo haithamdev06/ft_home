@@ -82,11 +82,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 // 	char	*trimmed;
 
 // 	trimmed = ft_strtrim(str, set);
-// 	if (!trimmed)
-// 	{
-// 		printf("Allocation failed!\n");
-// 		return (1);
-// 	}
 // 	printf("Original: %s\n", str);
 // 	printf("Trimmed:  %s\n", trimmed);
 // 	free(trimmed);

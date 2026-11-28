@@ -35,7 +35,7 @@ Functions that are not in libc, or that exist there in a different form:
 | `ft_striteri` | Applies a function to each character in place |
 | `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd` | Write a character, string, line or number to a file descriptor |
 
-### Bonus – Linked lists
+### Part 3 – Linked lists
 Functions that work on the `t_list` structure:
 
 ```c
@@ -55,8 +55,7 @@ typedef struct s_list
 The library is built with `cc` and the flags `-Wall -Wextra -Werror`.
 
 ```sh
-make          # builds libft.a (Part 1 + Part 2)
-make bonus    # adds the linked-list functions to libft.a
+make          # builds libft.a (all three parts)
 make clean    # removes object files
 make fclean   # removes object files and libft.a
 make re       # rebuilds everything from scratch

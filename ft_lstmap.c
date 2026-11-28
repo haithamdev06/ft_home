@@ -15,20 +15,23 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*neww;
-	int		i;
+	t_list	*new_list;
+	t_list	*new_node;
+	void	*new_content;
 
-	i = 0;
-    while (lst != NULL)
+	new_list = NULL;
+	while (lst != NULL)
 	{
-		f(lst->content);
+		new_content = f(lst->content);
+		new_node = ft_lstnew(new_content);
+		if (!new_node)
+		{
+			del(new_content);
+			ft_lstclear(&new_list, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&new_list, new_node);
 		lst = lst->next;
-		i++;
 	}
-	neww = malloc(size(t_list) * i);
-	if (!neww)
-		return (NULL);
-	return (neww);
-	del(lst->content);
-	free(lst);
+	return (new_list);
 }
